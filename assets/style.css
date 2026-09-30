@@ -424,7 +424,7 @@ a { color: inherit; }
 }
 
 /* ---------- 手機 ---------- */
-@media (max-width: 860px) {
+@media (max-width: 1000px) {
   .js .nav-toggle { display: inline-block; }
   .js .site-nav {
     display: none;
@@ -465,4 +465,71 @@ a { color: inherit; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   * { transition: none !important; }
+}
+
+/* ---------- 案例與工作包 ---------- */
+.client {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--muted);
+}
+.case-list { display: grid; gap: 28px; }
+.case {
+  padding: 28px 32px 24px;
+  background: var(--mist);
+  border-top: 4px solid var(--navy);
+  border-radius: 4px;
+}
+.case-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+.case-head h2 {
+  font-size: 1.4rem;
+  font-weight: 900;
+  line-height: 1.4;
+  color: var(--navy);
+}
+.status {
+  flex: none;
+  padding: 3px 14px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  line-height: 1.6;
+  white-space: nowrap;
+  border: 2px solid var(--navy);
+  border-radius: 999px;
+}
+.s-done { color: #fff; background: var(--navy); }
+.s-part { color: var(--ink); background: var(--orange); border-color: var(--orange); }
+.s-plan { color: var(--navy); background: #fff; }
+.kv {
+  display: grid;
+  grid-template-columns: 9.5em 1fr;
+  gap: 0;
+  margin: 0;
+}
+.kv dt, .kv dd {
+  margin: 0;
+  padding: 12px 0;
+  border-top: 1px solid var(--line);
+}
+.kv dt { font-weight: 700; color: var(--navy); padding-right: 16px; }
+.bullets { padding-left: 1.2em; list-style: disc; }
+.bullets li { margin: 2px 0; }
+.pkg { padding: 24px 24px 20px; }
+.pkg .kv { grid-template-columns: 1fr; }
+.pkg .kv dt { padding: 12px 0 0; border-top: 1px solid var(--line); }
+.pkg .kv dd { padding: 2px 0 12px; border-top: 0; }
+.card .client { margin-bottom: -4px; }
+
+@media (max-width: 640px) {
+  .case { padding: 22px 18px 18px; }
+  .case-head { flex-direction: column; gap: 10px; }
+  .kv { grid-template-columns: 1fr; }
+  .kv dt { padding: 12px 0 0; border-top: 1px solid var(--line); }
+  .kv dd { padding: 2px 0 12px; border-top: 0; }
 }

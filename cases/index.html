@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>案例 | 杰瑞的訂單廚房</title>
+<meta name="description" content="行銷費用月報自動化、LINE 加班申報自動化等實作案例，公司名稱皆以化名呈現。">
+<meta property="og:site_name" content="杰瑞的訂單廚房">
+<meta property="og:type" content="website">
+<meta property="og:title" content="案例 | 杰瑞的訂單廚房">
+<meta property="og:description" content="行銷費用月報自動化、LINE 加班申報自動化等實作案例，公司名稱皆以化名呈現。">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap">
+<link rel="stylesheet" href="../assets/style.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<a class="skip" href="#main">跳到主要內容</a>
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="../">杰瑞的訂單廚房</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">選單</button>
+    <nav id="site-nav" class="site-nav" aria-label="主選單">
+      <ul>
+        <li><a href="../">首頁</a></li>
+        <li><a href="../services/">服務與收費</a></li>
+        <li><a href="../diagnosis/">驗食材（診斷服務）</a></li>
+        <li><a href="../cases/" aria-current="page">案例</a></li>
+        <li><a href="../packages/">工作包</a></li>
+        <li><a href="../about/">關於杰瑞</a></li>
+        <li><a href="../blog/">部落格</a></li>
+      </ul>
+      <a class="btn btn-sm" href="https://line.me/R/ti/p/@afr2819p" rel="noopener">免費初診</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<section class="page-hero">
+  <div class="wrap">
+    <h1>案例</h1>
+    <p class="lead">案例中的公司名稱皆以化名呈現。</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="case-list">
+      <article class="case">
+        <header class="case-head">
+          <div>
+            <p class="client">某機械工程公司</p>
+            <h2>行銷費用月報自動化</h2>
+          </div>
+          <span class="status s-done">已完成</span>
+        </header>
+        <dl class="kv">
+  <dt>問題</dt>
+  <dd>預算與費用申報分散在兩份表單，每月手工比對、重算累計。</dd>
+  <dt>做法</dt>
+  <dd>每月 1 日自動讀取資料，產出含 8 個工作表、138 條公式的 Excel 月報與一封 Gmail 草稿。寄出前保留人工確認，不自動寄送。</dd>
+  <dt>原本的人工作業</dt>
+  <dd>每月約 2–3 小時（保守估計）</dd>
+</dl>
+
+      </article>
+      <article class="case">
+        <header class="case-head">
+          <div>
+            <p class="client">某機械工程公司</p>
+            <h2>LINE 加班申報自動化</h2>
+          </div>
+          <span class="status s-part">部分上線</span>
+        </header>
+        <dl class="kv">
+  <dt>問題</dt>
+  <dd>同一件事有兩個入口（LINE 群組口頭申請、系統填單），後端須人工比對。</dd>
+  <dt>做法</dt>
+  <dd>LINE 官方帳號加入既有群組自動接收訊息，解析日期、時數、事由，對應申請人姓名，寫入試算表並自動回覆確認。</dd>
+  <dt>已上線</dt>
+  <dd><ul class="bullets"><li>群組訊息自動接收</li><li>日期、時數、事由解析</li><li>申請人姓名對應</li><li>資料寫入試算表</li><li>自動回覆確認</li><li>關鍵字過濾，排除群組閒聊</li></ul></dd>
+  <dt>開發中</dt>
+  <dd><ul class="bullets"><li>與系統填單自動比對</li><li>異常自動通知承辦人</li><li>月度彙總報表</li></ul></dd>
+</dl>
+
+      </article>
+      <article class="case">
+        <header class="case-head">
+          <div>
+            <p class="client">某清潔服務業（公益展示案）</p>
+            <h2>官網 SEO／GEO 修正與 LINE 預約系統</h2>
+          </div>
+          <span class="status s-part">部分完成</span>
+        </header>
+        <dl class="kv">
+  <dt>官網 SEO／GEO 修正</dt>
+  <dd>已完成。</dd>
+  <dt>預約系統設計原則</dt>
+  <dd><ul class="bullets"><li>業者的所有操作都在 LINE：新單通知附完整判斷資訊，以及「確認接單」「婉拒」按鈕。</li><li>沒有任何一張單會跳過業者自動成立，系統只做粗篩，最後決定權在業者。</li><li>追「未處理」不追「未讀」：單子待確認逾時，系統提醒業者。</li><li>保險絲：每日心跳通知與表單 Email 通知兜底，最壞情況退回手動接單，單子不會消失。</li></ul></dd>
+  <dt>預約系統狀態</dt>
+  <dd>規劃中。架構已確認，待 LINE 官方帳號就緒後開工。</dd>
+</dl>
+
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="wrap">
+    <h2>現在就讓訂單發生</h2>
+    <a class="btn" href="https://line.me/R/ti/p/@afr2819p" rel="noopener">加入 LINE 預約初診</a>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p>© 2026 杰瑞的訂單廚房. 版權所有.</p>
+  </div>
+</footer>
+<script src="../assets/site.js" defer></script>
+</body>
+</html>
