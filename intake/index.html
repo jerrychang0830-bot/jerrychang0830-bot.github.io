@@ -40,7 +40,7 @@
 <section class="page-hero">
   <div class="wrap">
     <h1>初診前問卷</h1>
-    <p class="lead">12 題，約 3 分鐘。我先看懂你的狀況，15 分鐘的初診才不浪費你的時間。</p>
+    <p class="lead">13 題，約 3 分鐘。我先看懂你的狀況，15 分鐘的初診才不浪費你的時間。</p>
   </div>
 </section>
 
@@ -156,14 +156,22 @@
         <label class="opt"><input type="radio" name="timeline" value="還沒想過"> 還沒想過</label>
       </fieldset>
 
-      <p class="note-dark">資料只用於初診前了解你的狀況。</p>
+      <h2 class="sec-title">四、怎麼聯絡你</h2>
+
+      <div class="field">
+        <label class="q" for="q13">13. 聯絡電話</label>
+        <p class="hint">我看完你的答案後，會用這支電話聯絡你。</p>
+        <input class="inp" type="tel" id="q13" name="phone" maxlength="20" inputmode="tel" autocomplete="tel" required>
+      </div>
+
+      <p class="note-dark">資料只用於初診前了解你的狀況，電話只用來回覆你。</p>
       <p id="msg" class="form-msg" role="alert" hidden></p>
       <button class="btn btn-navy" type="submit" id="send">送出問卷</button>
     </form>
 
     <div id="done" class="done" hidden>
       <h2 class="sec-title">收到了</h2>
-      <p>最後一步：加 LINE，說一聲「問卷填好了」，並告訴我你剛剛填的稱呼。我會在 15 分鐘初診前先看過你的答案。</p>
+      <p>我看完你的答案後，會用你留的電話聯絡你。想更快，也可以加 LINE，說一聲「問卷填好了」，並告訴我你的稱呼。</p>
       <a class="btn btn-navy" href="https://line.me/R/ti/p/@afr2819p" rel="noopener">加 LINE 預約初診</a>
     </div>
   </div>
@@ -229,6 +237,12 @@
         return;
       }
     }
+    var phone = document.getElementById('q13').value.trim();
+    if (phone.replace(/\D/g, '').length < 8) {
+      say('第 13 題請填可以聯絡到你的電話。');
+      document.getElementById('q13').scrollIntoView({ behavior: 'smooth', block: 'center' });
+      return;
+    }
     if (ENDPOINT.indexOf('__GAS_URL__') === 0) { say('問卷尚未啟用，請改用 LINE @afr2819p 聯絡。'); return; }
 
     var payload = {
@@ -245,7 +259,8 @@
       pain: picked('pain'),
       goal: picked('goal')[0],
       history: document.getElementById('q11').value.trim(),
-      timeline: picked('timeline')[0]
+      timeline: picked('timeline')[0],
+      phone: phone
     };
 
     send.disabled = true;
