@@ -567,3 +567,56 @@ textarea.inp { resize: vertical; }
   .kv dt { padding: 12px 0 0; border-top: 1px solid var(--line); }
   .kv dd { padding: 2px 0 12px; border-top: 0; }
 }
+
+/* ---------- 首頁工作包 ---------- */
+.hero-link {
+  display: inline-block;
+  margin-top: 14px;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 2px solid var(--orange);
+}
+.hero-link:hover { color: var(--orange); }
+.sec-lead { margin: -16px 0 32px; color: var(--muted); }
+.pkg[id] { scroll-margin-top: 92px; }
+#packages { scroll-margin-top: 68px; }
+.pk { gap: 8px; }
+.pk-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+.pk-pain { font-weight: 700; color: var(--ink); }
+.pk-out { color: var(--muted); }
+.pk-out span {
+  margin-right: 8px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--navy);
+}
+.pk-all {
+  justify-content: center;
+  align-items: flex-start;
+  gap: 14px;
+  color: #fff;
+  background: var(--navy);
+  border-top-color: var(--orange);
+}
+.pk-all h3 { color: #fff; }
+.pk-all p { color: var(--on-dark); }
+.pk-all :focus-visible { outline-color: #fff; }
+.more-dark {
+  font-weight: 700;
+  font-size: 0.98rem;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 2px solid var(--orange);
+}
+.more-dark:hover { color: var(--orange); }
+
+@media (max-width: 640px) {
+  .pk-head { flex-direction: column; gap: 8px; }
+  .sec-lead { margin-top: -20px; }
+}
