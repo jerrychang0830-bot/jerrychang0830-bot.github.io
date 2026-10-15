@@ -648,9 +648,9 @@ textarea.inp { resize: vertical; }
 /* ---------- 首頁影片示範 ---------- */
 .demo-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 320px));
+  grid-template-columns: repeat(3, minmax(0, 300px));
   justify-content: center;
-  gap: 40px;
+  gap: 32px;
 }
 .demo { margin: 0; }
 .demo .case-video { box-shadow: 0 12px 28px rgba(30, 58, 102, 0.18); }
