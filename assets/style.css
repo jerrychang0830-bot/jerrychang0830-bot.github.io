@@ -559,10 +559,25 @@ textarea.inp { resize: vertical; }
 .pkg .kv dt { padding: 12px 0 0; border-top: 1px solid var(--line); }
 .pkg .kv dd { padding: 2px 0 12px; border-top: 0; }
 .card .client { margin-bottom: -4px; }
+.case-media {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 32px;
+  align-items: start;
+}
+.case-video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  background: #0b141f;
+  border-radius: 12px;
+}
 
 @media (max-width: 640px) {
   .case { padding: 22px 18px 18px; }
   .case-head { flex-direction: column; gap: 10px; }
+  .case-media { grid-template-columns: 1fr; gap: 18px; }
+  .case-video { max-width: 320px; margin: 0 auto; }
   .kv { grid-template-columns: 1fr; }
   .kv dt { padding: 12px 0 0; border-top: 1px solid var(--line); }
   .kv dd { padding: 2px 0 12px; border-top: 0; }
