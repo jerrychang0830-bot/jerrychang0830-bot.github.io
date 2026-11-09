@@ -219,59 +219,18 @@
 <section class="page-hero">
   <div class="wrap">
     <h1>工作包</h1>
-    <p class="lead">每個工作包都寫明問題模式、交付內容與目前狀態。</p>
+    <p class="lead">12 個工作包分成三類：讓客人找上門、讓客人接得住留得住、讓內部不靠人盯。每個都寫明問題模式、交付內容與目前狀態。</p>
     <a class="hero-link" href="../services/">看服務與收費的完整菜單</a>
   </div>
 </section>
 
 <section class="section">
   <div class="wrap">
-    <div class="grid grid-2 pkg-grid">
-      <article class="case pkg" id="pkg-report">
-        <header class="case-head">
-          <h2>行銷費用月報自動化</h2>
-          <span class="status s-done">已完成</span>
-        </header>
-        <dl class="kv">
-  <dt>問題模式</dt>
-  <dd>費用申報與年度預算分散在不同表單，每月人工比對、重算累計，格式與公式逐月不一致。</dd>
-  <dt>交付內容</dt>
-  <dd>每月自動產出含 8 個工作表的 Excel 月報，以及一封已寫好的 Gmail 草稿，寄出前由人工確認。</dd>
-  <dt>目前狀態</dt>
-  <dd>已完成</dd>
-</dl>
-
-      </article>
-      <article class="case pkg" id="pkg-overtime">
-        <header class="case-head">
-          <h2>LINE 加班申報自動化</h2>
-          <span class="status s-part">部分上線</span>
-        </header>
-        <dl class="kv">
-  <dt>問題模式</dt>
-  <dd>同一件事有兩個入口（LINE 群組口頭發起、系統填單），後端須人工比對。</dd>
-  <dt>交付內容</dt>
-  <dd>LINE 官方帳號加入群組自動接收訊息，解析日期、時數、事由，對應申請人，寫入試算表並自動回覆確認。</dd>
-  <dt>目前狀態</dt>
-  <dd>接收、解析、寫入已上線。與系統填單比對、異常通知、月度彙總開發中。</dd>
-</dl>
-
-      </article>
-      <article class="case pkg" id="pkg-booking">
-        <header class="case-head">
-          <h2>LINE 預約系統</h2>
-          <span class="status s-plan">規劃中</span>
-        </header>
-        <dl class="kv">
-  <dt>問題模式</dt>
-  <dd>客人預約與詢問時間，靠業者在 LINE 上逐句回覆。</dd>
-  <dt>交付內容</dt>
-  <dd>官網預約表單、預約資料集中在業者自己的試算表、LINE 通知附確認與婉拒按鈕、逾時未處理自動提醒。</dd>
-  <dt>目前狀態</dt>
-  <dd>規劃中。架構已確認，待開工。</dd>
-</dl>
-
-      </article>
+    <ul class="cat-nav" aria-label="工作包分類"><li><a href="#cat-find"><span>一</span>讓客人找上門</a></li><li><a href="#cat-catch"><span>二</span>讓客人接得住、留得住</a></li><li><a href="#cat-inside"><span>三</span>讓內部不靠人盯</a></li></ul>
+    <div class="pk-group" id="cat-find">
+      <h2 class="pk-group-title"><span class="pk-no">一</span>讓客人找上門</h2>
+      <p class="pk-group-lead">客人先看得到你，才有詢價。</p>
+      <div class="grid grid-2 pkg-grid">
       <article class="case pkg" id="pkg-content">
         <header class="case-head">
           <h2>行銷內容員</h2>
@@ -304,21 +263,6 @@
 </dl>
 
       </article>
-      <article class="case pkg" id="pkg-inquiry">
-        <header class="case-head">
-          <h2>B2B 詢價處理自動化包</h2>
-          <span class="status s-plan">規劃中</span>
-        </header>
-        <dl class="kv">
-  <dt>問題模式</dt>
-  <dd>詢價散在各個管道，沒人追，漏單沒人知道。</dd>
-  <dt>交付內容</dt>
-  <dd>詢價資料集中到業者自己的試算表、LINE 通知附「接單／婉拒」按鈕、逾時未處理自動提醒。</dd>
-  <dt>目前狀態</dt>
-  <dd>規劃中</dd>
-</dl>
-
-      </article>
       <article class="case pkg" id="pkg-video">
         <header class="case-head">
           <h2>AI 短影音製作流程</h2>
@@ -344,20 +288,43 @@
 </dl>
 
       </article>
-      <article class="case pkg" id="pkg-restaurant">
+      </div>
+    </div>
+    <div class="pk-group" id="cat-catch">
+      <h2 class="pk-group-title"><span class="pk-no">二</span>讓客人接得住、留得住</h2>
+      <p class="pk-group-lead">詢價或預約進來後，不漏接、不拖延，客人還會再回來。</p>
+      <h3 class="pk-sub">製造業（B2B）</h3>
+      <div class="grid grid-2 pkg-grid">
+      <article class="case pkg" id="pkg-inquiry">
         <header class="case-head">
-          <h2>餐飲進貨記帳與成本儀表板</h2>
+          <h2>B2B 詢價處理自動化包</h2>
           <span class="status s-plan">規劃中</span>
         </header>
         <dl class="kv">
   <dt>問題模式</dt>
-  <dd>進貨單、營收、人事與固定支出散在紙本、LINE 與 Excel，月底才知道錢花在哪；多分店時，對帳更費工。</dd>
+  <dd>詢價散在各個管道，沒人追，漏單沒人知道。</dd>
   <dt>交付內容</dt>
-  <dd>在網頁上直接登打進貨與營收，不需要先填 Excel。系統自動彙整成本結構儀表板，呈現進貨、人事、固定支出與利潤。支援多分店、多帳號，權限分老闆、店長、員工三級，員工看不到人事與利潤。內建操作紀錄、資料匯出匯入、回收桶與快照還原。資料存在業者自己的 Google 試算表。</dd>
-  <dt>不含</dt>
-  <dd><ul class="bullets"><li>保證降低成本或提高利潤</li><li>報稅、會計師簽證與統一發票開立</li><li>LINE 叫貨與 AI 貨單辨識：不在本包範圍</li></ul></dd>
+  <dd>詢價資料集中到業者自己的試算表、LINE 通知附「接單／婉拒」按鈕、逾時未處理自動提醒。</dd>
   <dt>目前狀態</dt>
-  <dd>規劃中。示範版已完成，含登入與權限、帳號管理、操作紀錄、備份與救援，尚未在實際店家環境上線。<a href="../cases/#case-restaurant">看示範影片</a></dd>
+  <dd>規劃中</dd>
+</dl>
+
+      </article>
+      </div>
+      <h3 class="pk-sub">在地服務業</h3>
+      <div class="grid grid-2 pkg-grid">
+      <article class="case pkg" id="pkg-booking">
+        <header class="case-head">
+          <h2>LINE 預約系統</h2>
+          <span class="status s-plan">規劃中</span>
+        </header>
+        <dl class="kv">
+  <dt>問題模式</dt>
+  <dd>客人預約與詢問時間，靠業者在 LINE 上逐句回覆。</dd>
+  <dt>交付內容</dt>
+  <dd>官網預約表單、預約資料集中在業者自己的試算表、LINE 通知附確認與婉拒按鈕、逾時未處理自動提醒。</dd>
+  <dt>目前狀態</dt>
+  <dd>規劃中。架構已確認，待開工。</dd>
 </dl>
 
       </article>
@@ -418,6 +385,59 @@
 </dl>
 
       </article>
+      </div>
+    </div>
+    <div class="pk-group" id="cat-inside">
+      <h2 class="pk-group-title"><span class="pk-no">三</span>讓內部不靠人盯</h2>
+      <p class="pk-group-lead">報表、申報、進貨、新人帶領，改成固定流程自動跑。</p>
+      <div class="grid grid-2 pkg-grid">
+      <article class="case pkg" id="pkg-report">
+        <header class="case-head">
+          <h2>行銷費用月報自動化</h2>
+          <span class="status s-done">已完成</span>
+        </header>
+        <dl class="kv">
+  <dt>問題模式</dt>
+  <dd>費用申報與年度預算分散在不同表單，每月人工比對、重算累計，格式與公式逐月不一致。</dd>
+  <dt>交付內容</dt>
+  <dd>每月自動產出含 8 個工作表的 Excel 月報，以及一封已寫好的 Gmail 草稿，寄出前由人工確認。</dd>
+  <dt>目前狀態</dt>
+  <dd>已完成</dd>
+</dl>
+
+      </article>
+      <article class="case pkg" id="pkg-overtime">
+        <header class="case-head">
+          <h2>LINE 加班申報自動化</h2>
+          <span class="status s-part">部分上線</span>
+        </header>
+        <dl class="kv">
+  <dt>問題模式</dt>
+  <dd>同一件事有兩個入口（LINE 群組口頭發起、系統填單），後端須人工比對。</dd>
+  <dt>交付內容</dt>
+  <dd>LINE 官方帳號加入群組自動接收訊息，解析日期、時數、事由，對應申請人，寫入試算表並自動回覆確認。</dd>
+  <dt>目前狀態</dt>
+  <dd>接收、解析、寫入已上線。與系統填單比對、異常通知、月度彙總開發中。</dd>
+</dl>
+
+      </article>
+      <article class="case pkg" id="pkg-restaurant">
+        <header class="case-head">
+          <h2>餐飲進貨記帳與成本儀表板</h2>
+          <span class="status s-plan">規劃中</span>
+        </header>
+        <dl class="kv">
+  <dt>問題模式</dt>
+  <dd>進貨單、營收、人事與固定支出散在紙本、LINE 與 Excel，月底才知道錢花在哪；多分店時，對帳更費工。</dd>
+  <dt>交付內容</dt>
+  <dd>在網頁上直接登打進貨與營收，不需要先填 Excel。系統自動彙整成本結構儀表板，呈現進貨、人事、固定支出與利潤。支援多分店、多帳號，權限分老闆、店長、員工三級，員工看不到人事與利潤。內建操作紀錄、資料匯出匯入、回收桶與快照還原。資料存在業者自己的 Google 試算表。</dd>
+  <dt>不含</dt>
+  <dd><ul class="bullets"><li>保證降低成本或提高利潤</li><li>報稅、會計師簽證與統一發票開立</li><li>LINE 叫貨與 AI 貨單辨識：不在本包範圍</li></ul></dd>
+  <dt>目前狀態</dt>
+  <dd>規劃中。示範版已完成，含登入與權限、帳號管理、操作紀錄、備份與救援，尚未在實際店家環境上線。<a href="../cases/#case-restaurant">看示範影片</a></dd>
+</dl>
+
+      </article>
       <article class="case pkg" id="pkg-sop">
         <header class="case-head">
           <h2>新人 SOP 與職務說明資料庫</h2>
@@ -439,6 +459,7 @@
 </dl>
 
       </article>
+      </div>
     </div>
   </div>
 </section>

@@ -679,3 +679,74 @@ textarea.inp { resize: vertical; }
   .sec-lead { margin-top: -20px; }
   .demo-grid { grid-template-columns: minmax(0, 320px); gap: 32px; }
 }
+
+/* ---------- 工作包分類 ---------- */
+.cat-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 0 0 48px;
+  padding: 0;
+  list-style: none;
+}
+.cat-nav a {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 18px;
+  font-weight: 700;
+  color: var(--navy);
+  text-decoration: none;
+  background: #fff;
+  border: 2px solid var(--navy);
+  border-radius: 999px;
+}
+.cat-nav a:hover { background: var(--navy); color: #fff; }
+.cat-nav a span {
+  display: inline-block;
+  min-width: 1.6em;
+  text-align: center;
+  font-weight: 900;
+  color: var(--ink);
+  background: var(--orange);
+  border-radius: 999px;
+}
+.pk-group { margin-bottom: 56px; scroll-margin-top: 92px; }
+.pk-group-title {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 6px;
+  font-size: clamp(1.4rem, 3vw, 1.8rem);
+  font-weight: 900;
+  line-height: 1.35;
+  color: var(--navy);
+}
+.pk-no {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.1em;
+  height: 2.1em;
+  font-size: 0.8em;
+  color: var(--ink);
+  background: var(--orange);
+  border-radius: 50%;
+}
+.pk-group-lead { margin-bottom: 24px; color: var(--muted); }
+.pk-sub {
+  margin: 28px 0 14px;
+  padding-left: 12px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--navy);
+  border-left: 4px solid var(--navy);
+}
+.pk-group .grid + .pk-sub { margin-top: 32px; }
+.pk-end { margin-top: 8px; }
+@media (max-width: 640px) {
+  .cat-nav { flex-direction: column; margin-bottom: 36px; }
+  .cat-nav a { width: 100%; }
+  .pk-group { margin-bottom: 44px; }
+}
