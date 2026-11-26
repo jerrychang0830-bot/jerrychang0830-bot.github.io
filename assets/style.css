@@ -424,6 +424,8 @@ a { color: inherit; }
   color: var(--on-dark);
   background: var(--navy-deep);
 }
+.footer-line { margin-top: 8px; }
+.footer-line a { color: #fff; text-decoration: underline; text-underline-offset: 3px; }
 
 /* ---------- 平板 ---------- */
 @media (max-width: 980px) {
